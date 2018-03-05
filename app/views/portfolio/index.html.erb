@@ -1,0 +1,5 @@
+<div class="portfolio-container">
+  <% @portfolios.each do |portfolio| %>
+    <%= render partial: 'portfolio/partials/portfolio_summary', locals: {portfolio: portfolio} %>
+  <% end %>
+</div>

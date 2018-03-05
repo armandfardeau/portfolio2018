@@ -1,0 +1,10 @@
+<div class="portfolio_single-container">
+  <div class="portfolio_single-left">
+    <%= link_to 'Back to portfolio', portfolio_index_path %>
+  </div>
+  <div class="portfolio_single-right">
+    <%= image_tag @portfolio.picture.url(:medium) %>
+    <h2><%= @portfolio.title %></h2>
+    <p><%= @portfolio.title %></p>
+  </div>
+</div>

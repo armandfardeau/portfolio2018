@@ -1,0 +1,9 @@
+<div class="portfolio-content">
+  <%= link_to portfolio_path(portfolio) do %>
+    <div class="portfolio_picture-container">
+      <%= image_tag portfolio.picture.url(:medium), class: 'portfolio_picture' %>
+    </div>
+    <h2><%= portfolio.title %></h2>
+    <p><%= truncate(portfolio.title, length: 40) %></p>
+  <% end %>
+</div>
