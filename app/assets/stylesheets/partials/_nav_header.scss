@@ -1,9 +1,11 @@
-nav {
+nav.header {
   font-size: 18px;
   line-height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
+  margin: 80px 200px;
 
   .author_name {
     display: inline-block;

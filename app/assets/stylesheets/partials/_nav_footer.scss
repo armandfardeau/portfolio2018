@@ -1,0 +1,21 @@
+nav.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin: 80px 200px 0 200px;
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    a{
+      padding: 20px;
+    }
+    img {
+      width: 100%;
+      max-width: 30px;
+      height: auto;
+    }
+  }
+}
