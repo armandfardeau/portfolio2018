@@ -1,0 +1,17 @@
+@import "colors";
+
+.btn {
+  display: inline-block;
+  padding: 20px;
+}
+
+.btn-primary {
+  border: 1px solid #fff;
+  color: $text-white;
+  text-decoration: none;
+  &:hover {
+    background-color: $text-white;
+    color: $text-black;
+    border-color: $text-black;
+  }
+}
