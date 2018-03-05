@@ -1,0 +1,35 @@
+nav {
+  font-size: 18px;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .author_name {
+    display: inline-block;
+    color: $text-black;
+    text-decoration: none;
+    padding: 1rem;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $text-black;
+      font-weight: bold;
+    }
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    li {
+      a {
+        color: $text-black;
+        text-decoration: none;
+        padding: 1rem;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: $text-black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
