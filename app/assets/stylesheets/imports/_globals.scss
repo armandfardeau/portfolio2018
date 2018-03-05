@@ -2,11 +2,13 @@ body {
   color: $text-black;
   background-color: $bg-white;
   min-height: 100vh;
+  padding: 0 10%;
 }
 
 a, h1, h2, h3, h4, h5, h6 {
   font-family: $font-primary;
   font-weight: 500;
+  color: $text-black;
 }
 
 p {
@@ -14,4 +16,5 @@ p {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
+  color: $text-black;
 }
