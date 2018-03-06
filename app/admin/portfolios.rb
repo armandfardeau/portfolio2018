@@ -11,6 +11,7 @@ ActiveAdmin.register Portfolio do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+
   permit_params :picture, :title, :description
 
   index do
@@ -19,6 +20,7 @@ ActiveAdmin.register Portfolio do
     column :title
     column :description
     column :created_at
+    column :updated_at
     actions
   end
 
