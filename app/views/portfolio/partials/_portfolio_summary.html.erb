@@ -4,6 +4,6 @@
       <%= image_tag portfolio.picture.url(:medium), class: 'portfolio_picture' %>
     </div>
     <h2><%= portfolio.title %></h2>
-    <p><%= truncate(portfolio.title, length: 40) %></p>
+    <p><%= truncate(portfolio.description, length: 40) %></p>
   <% end %>
 </div>
