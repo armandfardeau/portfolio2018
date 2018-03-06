@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+.container {
+  margin: 0 10%;
+}
+
 a, h1, h2, h3, h4, h5, h6 {
   font-family: $font-primary;
   font-weight: 500;
