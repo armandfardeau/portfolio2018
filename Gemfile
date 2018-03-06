@@ -41,7 +41,7 @@ gem 'activeadmin'
 gem 'devise'
 
 gem 'rollbar'
-gem 'dotenv'
+gem 'dotenv', require: 'dotenv/load'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
