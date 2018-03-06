@@ -5,17 +5,27 @@ nav.footer {
 
   margin: 80px 0;
 
-  ul{
+  ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    a{
-      padding: 20px;
-    }
-    img {
-      width: 100%;
-      max-width: 30px;
-      height: auto;
+    li {
+      a {
+        svg {
+          width: 100%;
+          max-width: 30px;
+          height: auto;
+          display: block;
+          padding: 20px 0 20px 20px;
+        }
+      }
+      &:not(:last-child) {
+        a {
+          svg {
+            padding: 20px 20px;
+          }
+        }
+      }
     }
   }
 }
