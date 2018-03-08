@@ -8,3 +8,21 @@
     <p class='copyright'>© 2018 Armand Fardeau</p>
   </nav>
 </div>
+
+<nav class="header_footer-mobile">
+  <%= link_to root_path do %>
+    <%= inline_svg 'home.svg' %>
+  <% end %>
+  <%= link_to portfolio_index_path do %>
+    <%= inline_svg 'portfolio.svg' %>
+  <% end %>
+  <%= link_to 'https://medium.com/@armandfardeau' do %>
+    <%= inline_svg 'blog.svg' %>
+  <% end %>
+  <%= link_to pages_about_path do %>
+    <%= inline_svg 'about.svg' %>
+  <% end %>
+  <%= link_to pages_contact_path do %>
+    <%= inline_svg 'contact.svg' %>
+  <% end %>
+</nav>

@@ -2,8 +2,10 @@ nav.footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
   margin: 80px 0;
+  @include breakpoint(xs) {
+    display: none;
+  }
 
   ul {
     list-style-type: none;
@@ -28,4 +30,32 @@ nav.footer {
       }
     }
   }
+}
+
+.header_footer-mobile {
+  display: none;
+  @include breakpoint(xs) {
+    background-color: $highlight;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    a {
+      text-transform: uppercase;
+      text-align: center;
+      width: calc(100vw / 10);
+      height: auto;
+      padding: 14px 5px;
+      &:focus, &:hover {
+        color: $text-white;
+        background-color: $text-black;
+      }
+    }
+  }
+}
+
+#drift-widget {
+  bottom: 10vh !important;
 }

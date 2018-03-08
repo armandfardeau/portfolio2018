@@ -5,8 +5,10 @@ nav.header {
   justify-content: space-between;
   flex-flow: wrap-reverse;
   align-items: center;
-
   margin: 10px 0 80px 0;
+  @include breakpoint(xs) {
+    display: none;
+  }
 
   .author_name {
     display: inline-block;
