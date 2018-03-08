@@ -5,7 +5,12 @@ class Portfolio < ApplicationRecord
       thumb: "100x100>"
   },
                     default_url: "/images/:style/missing.png",
-                    :storage => :cloudinary,
-                    :path => ':id/:style/:filename'
+                    storage: :cloudinary,
+                    :cloudinary_url_options => {
+                        :default => {
+                            :secure => true
+                        },
+                    },
+                    path: ':id/:style/:filename'
   validates_attachment_content_type :picture, content_type: /\Aimage\/.*\z/
 end
