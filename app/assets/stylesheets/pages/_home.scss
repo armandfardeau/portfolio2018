@@ -1,4 +1,7 @@
 .home-container {
+  @include breakpoint(xs) {
+    padding-bottom: 70px;
+  }
   .jumbotron {
     background: linear-gradient(
                     rgba(0, 0, 0, 0.2),
