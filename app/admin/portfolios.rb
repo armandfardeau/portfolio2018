@@ -12,13 +12,17 @@ ActiveAdmin.register Portfolio do
 #   permitted
 # end
 
-  permit_params :picture, :title, :description
+  permit_params :title, :description, :client, :stack, :date, :duration, :created_at, :updated_at
 
   index do
     selectable_column
     id_column
     column :title
     column :description
+    column :client
+    column :stack
+    column :date
+    column :duration
     column :created_at
     column :updated_at
     actions
@@ -38,6 +42,10 @@ ActiveAdmin.register Portfolio do
     f.inputs "Upload" do
       f.input :title
       f.input :description
+      f.input :client
+      f.input :stack
+      f.input :date
+      f.input :duration
       f.input :picture, required: true, as: :file
     end
     f.actions

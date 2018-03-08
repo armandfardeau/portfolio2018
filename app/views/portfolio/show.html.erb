@@ -5,6 +5,15 @@
   <div class="portfolio_single-right">
     <%= image_tag @portfolio.picture.url(:large) %>
     <h2><%= @portfolio.title %></h2>
+    <h4>Description:</h4>
     <p><%= @portfolio.description %></p>
+    <h4>Client:</h4>
+    <p><%= @portfolio.client %></p>
+    <h5>Stack: </h5>
+    <p><%= @portfolio.stack %></p>
+    <H5>Date:</H5>
+    <p><%= @portfolio.date.strftime('%d.%m.%y') %></p>
+    <h5>Duration:</h5>
+    <p><%= @portfolio.duration %><%= @portfolio.duration > 1 ? ' man/days' : ' man/day' %></p>
   </div>
 </div>
