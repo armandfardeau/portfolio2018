@@ -47,10 +47,15 @@ nav.footer {
       text-align: center;
       width: calc(100vw / 10);
       height: auto;
-      padding: 14px 5px;
+      padding: 14px 24px;;
       &:focus, &:hover {
         color: $text-white;
         background-color: $text-black;
+        svg{
+          path {
+            fill: #ffffff;
+          }
+        }
       }
     }
   }
