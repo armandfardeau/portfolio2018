@@ -6,7 +6,7 @@
     <%= image_tag @portfolio.picture.url(:large) %>
     <h2><%= @portfolio.title %></h2>
     <h4>Description:</h4>
-    <p><%= @portfolio.description %></p>
+    <%= raw @portfolio.description %>
 
     <% if @portfolio.client %>
       <h5>Client:</h5>
@@ -15,7 +15,7 @@
 
     <% if @portfolio.date %>
       <h5>Stack: </h5>
-      <p><%= @portfolio.stack %></p>
+      <%= raw @portfolio.stack %>
     <% end %>
 
     <% if @portfolio.date %>

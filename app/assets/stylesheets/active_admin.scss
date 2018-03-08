@@ -6,7 +6,8 @@
 //
 // For example, to change the sidebar width:
 // $sidebar-width: 242px;
-
+@import 'activeadmin/trumbowyg/ui/sass/trumbowyg';
+@import 'activeadmin/trumbowyg_input';
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";

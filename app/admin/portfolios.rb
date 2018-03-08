@@ -41,9 +41,9 @@ ActiveAdmin.register Portfolio do
   form do |f|
     f.inputs "Upload" do
       f.input :title
-      f.input :description
+      f.input :description, as: :trumbowyg
       f.input :client
-      f.input :stack
+      f.input :stack, as: :trumbowyg
       f.input :date
       f.input :duration
       f.input :picture, required: true, as: :file
