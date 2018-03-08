@@ -2,11 +2,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @include breakpoint(xs) {
+    flex-direction: column;
+  }
 
   .portfolio_single-left {
     flex: 1;
   }
   .portfolio_single-right {
     flex: 2;
+    @include breakpoint(xs) {
+      img {
+        width: 100%;
+      }
+      margin-top: 20px;
+      text-align: center;
+    }
   }
 }

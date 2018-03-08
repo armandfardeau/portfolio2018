@@ -3,6 +3,7 @@ nav.header {
   line-height: 100px;
   display: flex;
   justify-content: space-between;
+  flex-flow: wrap-reverse;
   align-items: center;
 
   margin: 10px 0 80px 0;
@@ -20,6 +21,8 @@ nav.header {
   }
   ul {
     display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
     list-style-type: none;
     li {
       a {

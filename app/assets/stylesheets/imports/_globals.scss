@@ -1,3 +1,5 @@
+@import 'media_q';
+
 body {
   color: $text-black;
   background-color: $bg-white;
@@ -7,6 +9,9 @@ body {
 
 .container {
   margin: 0 10%;
+  @include breakpoint(xs) {
+    margin: 0 5%;
+  }
 }
 
 a, h1, h2, h3, h4, h5, h6 {

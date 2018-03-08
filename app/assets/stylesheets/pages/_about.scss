@@ -3,14 +3,25 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  @include breakpoint(xs) {
+    flex-direction: column;
+    margin: 20% 0;
+    align-items: center;
+  }
 
   .image_about {
     margin-right: 5vw;
     width: 100%;
     max-width: 400px;
     height: auto;
+    @include breakpoint(xs) {
+      margin-right: 0;
+    }
   }
   .main_content {
+    @include breakpoint(xs) {
+      text-align: center;
+    }
     h1 {
       font-size: 48px;
       line-height: 56px;
