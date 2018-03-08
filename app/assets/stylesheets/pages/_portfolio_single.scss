@@ -11,7 +11,7 @@
     flex: 1;
   }
   .portfolio_single-right {
-    flex: 2;
+    flex: 4;
     @include breakpoint(xs) {
       img {
         width: 100%;
