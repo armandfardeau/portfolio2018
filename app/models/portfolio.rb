@@ -13,4 +13,9 @@ class Portfolio < ApplicationRecord
                     },
                     path: ':id/:style/:filename'
   validates_attachment_content_type :picture, content_type: /\Aimage\/.*\z/
+
+  def upvote
+    self.impression += 1
+    self.save
+  end
 end

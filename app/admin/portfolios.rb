@@ -12,11 +12,13 @@ ActiveAdmin.register Portfolio do
 #   permitted
 # end
 
-  permit_params :title, :description, :client, :stack, :date, :duration, :created_at, :updated_at
+  permit_params :title, :description, :client, :stack, :date, :duration, :created_at, :updated_at, :sponsored
 
   index do
     selectable_column
     id_column
+    column :impression
+    column :sponsored
     column :title
     column :description
     column :client
@@ -30,6 +32,8 @@ ActiveAdmin.register Portfolio do
 
   show do |ad|
     attributes_table do
+      row :impression
+      row :sponsored
       row :title
       row :picture do
         image_tag(ad.picture.url(:thumb))
@@ -46,6 +50,7 @@ ActiveAdmin.register Portfolio do
       f.input :stack, as: :trumbowyg
       f.input :date
       f.input :duration
+      f.input :sponsored
       f.input :picture, required: true, as: :file
     end
     f.actions
