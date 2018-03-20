@@ -40,6 +40,8 @@ gem 'paperclip-cloudinary'
 gem 'activeadmin'
 gem 'devise'
 
+gem 'rack-cache'
+
 gem 'rollbar'
 gem 'dotenv', require: 'dotenv/load'
 

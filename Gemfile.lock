@@ -179,6 +179,8 @@ GEM
     public_suffix (3.0.2)
     puma (3.11.2)
     rack (2.0.4)
+    rack-cache (1.7.1)
+      rack (>= 0.4)
     rack-test (0.8.3)
       rack (>= 1.0, < 3)
     rails (5.1.5)
@@ -306,6 +308,7 @@ DEPENDENCIES
   paperclip-cloudinary
   pg
   puma (~> 3.7)
+  rack-cache
   rails (~> 5.1.5)
   rollbar
   rubocop
