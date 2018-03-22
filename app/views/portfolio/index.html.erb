@@ -1,5 +1,5 @@
 <div class="container portfolio-container">
   <% @portfolios.each do |portfolio| %>
-    <%= render partial: 'portfolio/partials/portfolio_summary', locals: {portfolio: portfolio} %>
+    <%= render partial: 'portfolio/partials/portfolio_summary', locals: {portfolio: portfolio}, cached: true %>
   <% end %>
 </div>

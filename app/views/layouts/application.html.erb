@@ -13,9 +13,9 @@
 </head>
 
 <body>
-<%= render 'layouts/nav/nav_header' %>
+<%= render 'layouts/nav/nav_header', cached: true %>
 <%= yield %>
-<%= render 'layouts/nav/nav_footer' %>
+<%= render 'layouts/nav/nav_footer', cached: true %>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <!-- Global site tag (gtag.js) - Google Analytics -->
